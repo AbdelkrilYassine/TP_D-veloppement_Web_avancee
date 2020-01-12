@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulaire d'inscription étudiant</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+
+	<ul id="menu">
+		<li><a href="#">Identification</a>
+			<ul class="hidden">
+				<li><a href="identification.html">Login</a></li>
+			</ul></li>
+		<li><a href="insertionEtudiant.html">insertionEtudiant</a></li>
+		<li><a href="recherche.html">Recherche</a></li>
+	</ul>
+	<form method="post" action="InsertionEtudiant">
+		<fieldset>
+			<legend>Page d'inscription étudiant</legend>
+			<div>
+				<label for="ID">Identifiant :</label> <input required
+					placeholder="123" type="number" name="ID" id="ID" class="txt" />
+			</div>
+			<div>
+				<label for="NOM">Nom :</label> <input required maxlength="35"
+					placeholder="John" type="text" name="NOM" id="NOM" class="txt" />
+			</div>
+			<div>
+				<label for="PRENOM">Prenom :</label> <input required maxlength="35"
+					placeholder="Adam" type="text" name="PRENOM" id="PRENOM"
+					class="txt" />
+			</div>
+			<div>
+				<label for="MOY">Moyenne générale :</label> <input required min="0"
+					max="20" placeholder="10" type="number" name="MOY" id="MOY"
+					class="txt" />
+			</div>
+
+			<div>
+
+				<select name="list" multiple required size="6">
+					<option value="" disabled selected>Choix des matières</option>
+					<option value="Math">Math</option>
+					<option value="Physique">Physique</option>
+					<option value="Informatique">Informatique</option>
+					<option value="Sciences">Sciences</option>
+					<option value="Droit">Droit</option>
+				</select> <label for="list">Choisir 3 matières désirez vous étudier </label>
+			</div>
+
+			<div>
+				<input type="submit" name="btnSubmit" id="btnSubmit" value="Ajout"
+					class="btn" />
+			</div>
+		</fieldset>
+	</form>
+</body>
+</html>

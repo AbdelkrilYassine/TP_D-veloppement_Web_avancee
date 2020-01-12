@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Formulaire de login</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+
+
+	<ul id="menu">
+		<li><a href="#">Identification</a>
+			<ul class="hidden">
+				<li><a href="identification.html">Login</a></li>
+			</ul></li>
+		<li><a href="insertionEtudiant.html">insertionEtudiant</a></li>
+		<li><a href="recherche.html">Recherche</a></li>
+	</ul>
+	<form method="post" action="Identification">
+		<fieldset>
+			<legend>Page d' identification</legend>
+			<div>
+				<label for="login">Login :</label> <input required maxlength="35"
+					placeholder="John123" type="text" name="login" id="login"
+					class="txt" />
+			</div>
+
+			<div>
+				<label for="password">Mot de passe :</label> <input required
+					maxlength="35" placeholder="John123" type="password"
+					name="password" id="password" class="txt" />
+			</div>
+
+
+			<div>
+				<input type="submit" name="btnSubmit" id="btnSubmit" value="Login"
+					class="btn" />
+			</div>
+
+		</fieldset>
+	</form>
+</html>

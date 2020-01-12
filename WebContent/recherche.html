@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Rechercher un étudiant</title>
+<link rel="stylesheet" type="text/css" href="form.css">
+<link rel="stylesheet" type="text/css" href="menu.css">
+</head>
+<body>
+	<ul id="menu">
+		<li><a href="#">Identification</a>
+			<ul class="hidden">
+				<li><a href="identification.html">Login</a></li>
+			</ul></li>
+		<li><a href="insertionEtudiant.html">insertionEtudiant</a></li>
+		<li><a href="recherche.html">Recherche</a></li>
+	</ul>
+
+	<form method="post" action="RechercheEtudiant">
+		<fieldset>
+			<legend>Page de recherche d'étudiant</legend>
+			<div>
+				<label for="ID">Identifiant :</label> <input required placeholder="123" type="number" name="ID"
+					id="ID" class="txt" />
+			</div>
+			<input type="submit" name="btnSubmit" id="btnSubmit"
+				value="Recherche" class="btn" />
+		</fieldset>
+	</form>
+</body>
+</html>
